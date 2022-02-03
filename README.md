@@ -11,13 +11,9 @@
 # Demo
 
 - Home page ( User is not logged In )
+ 
 ![image](https://user-images.githubusercontent.com/85643213/152418130-92e957f5-85a5-4e34-9685-02f65b3df9bf.png)
 
-- Login page
-![image](https://user-images.githubusercontent.com/85643213/152418887-66d8e53c-ae52-4aa0-a88b-0daf38cf928c.png)
-
-- Sign Up page
-![image](https://user-images.githubusercontent.com/85643213/152418987-5563dd9c-c99e-41b8-82a5-464af8e63b3a.png)
-
 - Home Page ( User is Logged In )
+
 ![image](https://user-images.githubusercontent.com/85643213/152419125-c4f7c04f-8e2c-4b7b-8485-6cb23920e46c.png)
