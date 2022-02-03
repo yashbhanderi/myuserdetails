@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+
+:root {
+    --pink: #f95b3d;
+    --text-color-1: #270949;
+    --text-color-2: #666;
+    --bg-color-1: #fff;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--pink);
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--bg-color-2);
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--text-color-1);
+    font-size: 4rem;
+    margin: 10px;
+}
+
+.heading span {
+    position: relative;
+    z-index: 0;
+}
+
+.heading span::before {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    z-index: -1;
+    background: var(--pink);
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 90%, 100% 86%, 100% 100%, 0% 100%);
+}
+
+.btn {
+    margin: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--pink);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+.error {
+    color: var(--text-color-1);
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+}
+
+
+
+.users {
+    height: 100vh;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.users .header {
+    height: 100px;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.users table {
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+}
+
+.users table tbody {
+    border-radius: 0.5rem;
+}
+
+.users table thead tr {
+    background-color: var(--pink);
+    color: #ffffff;
+}
+
+.users table th,
+.users table td {
+    text-align: center;
+    padding: 12px 50px;
+}
+
+.users table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.users table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.users table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--bg-color-1);
+}
+
+.users table tbody tr.active-row {
+    font-weight: bold;
+    color: var(--pink);
+}
+
+@media (max-width: 450px) {
+    .users .header {
+        flex-direction: column;
+        
+    }
+
+    .users .header .heading{
+        padding-bottom: 0;
+    }
+}
