@@ -2,7 +2,7 @@
 
 Website Link: https://myuserdetails.herokuapp.com/
 
-- This is full stack web application created with React Js and Django.
+- This is full a stack web application created with React Js and Django.
 - It shows all the registered users information only when user is logged in.
 - It shows user's username, email, and phone number.
 - In sign up, It shows necessory errors like email or username exists, password must be match, phone number must be 10 digit, etc.
