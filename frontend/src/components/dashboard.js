@@ -25,7 +25,6 @@ const Dashboard = () => {
             axios
                 .get(baseURL + "get-details/")
                 .then((res) => {
-                    console.log(res.data);
                     setDetails({
                         ...details,
                         users: [...res.data.user],
